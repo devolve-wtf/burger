@@ -5,7 +5,8 @@ const connection = mysql.createConnection({
     host: "localhost",
     user: 'root',
     password: 'root',
-    database: 'burger_db'
+    database: 'burger_db',
+    socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
 });
 
 connection.connect(function(err) {

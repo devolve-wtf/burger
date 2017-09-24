@@ -29,9 +29,11 @@ router.put('/:id', function(req, res) {
     //Log for testing
     console.log('condition', condition);
 
-    burger.update({
+    burger.updateOne({
         devoured: req.body.devoured
     }, condition, function() {
         res.redirect('/');
     });
 })
+
+module.exports = router;
