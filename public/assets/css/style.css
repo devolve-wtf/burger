@@ -1,7 +1,16 @@
+ul {
+  list-style-type: none;
+}
+
 li {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
+    background-image: url('../img/burger.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-left: -30px;
+    padding-left: 73px;
   }
   
   .label {
@@ -11,7 +20,8 @@ li {
   .create-update-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    background: #9C1C18;
+    color: #fff;
   }
   
   .form-group {

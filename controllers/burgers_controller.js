@@ -34,6 +34,17 @@ router.put('/:id', function(req, res) {
     }, condition, function() {
         res.redirect('/');
     });
-})
+});
+
+router.delete('/:id', function(req, res) {
+
+    let condition = 'id = ' + req.params.id;
+
+    burger.deleteOne(condition, function() {
+        res.redirect('/');
+    });
+
+
+});
 
 module.exports = router;

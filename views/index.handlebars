@@ -12,6 +12,8 @@
           <input type="hidden" name="devoured" value="true">
           <button type="submit">Nom Nom Nom!</button>
         </form>
+
+        {{> parts/deleteOne}}
       </li>
     {{/unless}}
   {{/each}}
@@ -30,6 +32,7 @@
           <button type="submit">Order another!</button>
         </form>
 
+      {{> parts/deleteOne}}
       </li>
     {{/if}}
   {{/each}}
